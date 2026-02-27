@@ -1,0 +1,61 @@
+.dashboard {
+    padding: 24px;
+    background: var(--bg-page);
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    display: grid;
+    gap: 24px;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "kpi kpi"
+        "revenue traffic"
+        "activity activity";
+}
+.dashboard__sections {
+  margin-top: 1rem;
+}
+
+.dashboard__kpi {
+    grid-area: kpi;
+    margin-bottom: 1rem;
+}
+
+.dashboard__revenue {
+    grid-area: revenue;
+}
+
+.dashboard__traffic {
+    grid-area: traffic;
+}
+
+.dashboard__activity {
+    grid-area: activity;
+}
+
+.dashboard-card {
+    background: var(--bg-section);
+    color: var(--text-primary);
+}
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "kpi"
+            "revenue"
+            "traffic"
+            "activity";
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    .dashboard {
+        padding: 16px;
+        gap: 16px;
+    }
+}

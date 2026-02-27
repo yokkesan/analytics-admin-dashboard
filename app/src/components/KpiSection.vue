@@ -15,7 +15,7 @@ const kpis: KpiItem[] = [
 </script>
 
 <template>
-    <section>
+    <section class="kpi-grid">
         <KpiCard v-for="kpi in kpis" :key="kpi.label" :label="kpi.label" :value="kpi.value" />
     </section>
 </template>

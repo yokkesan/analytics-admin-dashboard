@@ -1,1 +1,4 @@
-@use './dashboard';
+@use './layout/dashboard';
+@use './components/card';
+@use './components/kpi-card';
+@use './variables';

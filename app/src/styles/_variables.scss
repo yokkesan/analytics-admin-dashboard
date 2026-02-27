@@ -1,0 +1,21 @@
+:root {
+    --bg-page: #dbe7fb;
+    --bg-section: #ffffff;
+    --bg-card: #ffffff;
+
+    --text-primary: #111827;
+    --text-secondary: #000103;
+
+    --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.dark {
+  --bg-page: #0b1e3a;        /* 紺（深めだが黒ではない） */
+  --bg-section: #8f9fb5;     /* グレー寄り（青み弱） */
+  --bg-card: #5f6978;        /* 少し明るいグレー */
+
+  --text-primary: #f3f4f6;   /* 強めの白 */
+  --text-secondary: #f4f7fc; /* 落ち着いたグレー */
+
+  --shadow-card: none;
+}
