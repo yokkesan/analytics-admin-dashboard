@@ -2,5 +2,7 @@
 </script>
 
 <template>
-  <router-view />
+  <section>
+    Traffic Section
+  </section>
 </template>

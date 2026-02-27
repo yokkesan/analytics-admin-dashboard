@@ -1,0 +1,58 @@
+.dashboard {
+    padding: 24px;
+    background: #f5f7fa;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    display: grid;
+    gap: 24px;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "kpi kpi"
+        "revenue traffic"
+        "activity activity";
+}
+
+.dashboard__kpi {
+    grid-area: kpi;
+}
+
+.dashboard__revenue {
+    grid-area: revenue;
+}
+
+.dashboard__traffic {
+    grid-area: traffic;
+}
+
+.dashboard__activity {
+    grid-area: activity;
+}
+
+.dashboard-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    min-height: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.kpi-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.kpi-card__label {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.kpi-card__value {
+    font-size: 24px;
+    font-weight: 600;
+    color: #111827;
+}
